@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  typeWriterEffect("I am Tharunkumar Reddy", 100, "typewriter");
+  typeWriterEffect("I am Gunda trinaath", 100, "typewriter");
 });
 
 function typeWriterEffect(text, speed, elementId) {
