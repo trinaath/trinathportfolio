@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <!-- Font Awesome CDN link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-GKZu+q0P5NUjBp6v59aVYB5JXq7U8bI2mT59m7fg7+qbsKmHoF6tQD2Y8gdLp+XpqTJRUr6e7wrZ+V36n4NYmA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#about" onclick="showSection('about')">About</a></li>
+                <li><a href="#internships" onclick="showSection('internships')">Internships</a></li>
+                <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#resume" onclick="showSection('resume')">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="home" class="section active">
+      <div class="container">
+          <h1 id="typewriter"></h1>
+          <div class="social-links">
+              <a href="https://in.linkedin.com/in/gunda-trinaath- 190665223" target="_blank" class="linkedin">
+                  <img src="imagess/linkedin icon.png" alt="LinkedIn">
+              </a>
+              <a href="https://github.com/trinaath" target="_blank" class="github">
+                  <img src="imagess/github icon.png" alt="GitHub">
+              </a>
+              <a href="mailto:gundathrinath7@gmail.com" target="_blank" class="email">
+                  <img src="imagess/mail icon.png" alt="Email">
+              </a>
+          </div>
+          
+          <!-- Image Section -->
+          <div class="image-section">
+              <h3>ITS ME!!</h3>
+              <img src="" alt="Gunda Trinaath" style="width: 150px;">
+          </div>
+      </div>
+  </div>
+        
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About</h2>
+            <p>A motivated B.Tech undergraduate in Computer Science with strong leadership and continuous learning abilities. Proven success in project management and team collaboration. Seeking a position to apply my problem-solving skills and technical expertise in C, Python, and SQL to drive innovation and achieve organizational goals.</p>
+            
+            <!-- Skills Section -->
+            <div class="skills-section">
+                <h3>Skills</h3>
+                <div class="skills-box">
+                    <div class="skill">C</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">Basic Java</div>
+                    <div class="skill">HTML & CSS</div>
+                    <div class="skill">SQL</div>
+                    <div class="skill">MS Word</div>
+                    <div class="skill">MS PowerPoint</div>
+                </div>
+            </div>
+            
+            <!-- Interests Section -->
+            <div class="interests-section">
+                <h3>Interests</h3>
+                <div class="interests-box">
+                    <div class="interest">Software Engineering</div>
+                    <div class="interest">Web Development</div>
+                    <div class="interest">Algorithms</div>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+
+    <section id="internships" class="section">
+      <div class="container">
+          <h2>Internships</h2>
+          
+          <div class="internship" onclick="toggleDetails('internship2-details')">
+              <h3>2. Remark skill</h3>
+              <div id="internship2-details" class="internship-details">
+                  <h4>Role:aiml virtual intern</h4>
+                  <p>Duration: june 2024 - July 2024</p>
+                  <p>Description: Involved in AI/ML virtual internship, gaining hands-on experience in machine learning models and data analysis. Collaborated on real-world projects, enhancing skills in Python, TensorFlow, and data preprocessing.</p>
+                  <p><a href="https://drive.google.com/file/d/1fpVzYcHeZgwdjSKgL2ZFdmk9ZWgeEf7Z/view?usp=drivesdk" target="_blank" class="certificate-link">View Certificate</a></p>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project" onclick="toggleDetails('project1-details')">
+                <h3>Project 1: to-do list app</h3>
+                <div id="project1-details" class="project-details">
+                    <h4>Description:To-Do List" is a simple and effective tool for managing tasks and organizing daily activities. It is widely used both in personal life and professional environments to keep track of tasks that need to be completed</h4>
+                    <p></p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-form">
+                <div class="contact-info">
+                    <div class="info-box">
+                        <h3>Name:</h3>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="info-box">
+                        <h3>Email:</h3>
+                        <input type="email" placeholder="Enter your email">
+                    </div>
+                    <div class="info-box">
+                        <h3>Phone:</h3>
+                        <input type="tel" placeholder="Enter your phone number">
+                    </div>
+                </div>
+                <button class="submit-btn">Submit</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
